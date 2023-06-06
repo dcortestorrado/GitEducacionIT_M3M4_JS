@@ -17,7 +17,7 @@ function resetearFormulario(){
 /* Para mostrar las ofertas */
 function mostrarOfertas(){
 
-    const arregloOfertas = [{capital: 150000, plazo: 30, tasa: 15}, {capital: 300000, plazo: 180, tasa: 10}, {capital: 485000, plazo: 60, tasa: 23}];
+    const arregloOfertas = [{capital: 150000, plazo: 30, tasa: 0.15}, {capital: 300000, plazo: 180, tasa: 0.10}, {capital: 485000, plazo: 60, tasa: 0.23}];
     const interesAparte = [];
     const ofertasConInteres = [];
     
@@ -67,19 +67,19 @@ function calcularCredito() {
             fila = filas[0];
             tdsFila = fila.getElementsByTagName('td');
             console.log(tdsFila);
-            interes = (tdsFila[0].textContent*tdsFila[1].textContent*tdsFila[2].textContent) / 10000;
+            interes = (tdsFila[0].textContent*tdsFila[1].textContent*tdsFila[2].textContent) / 100;
             montoTotal = interes + parseInt(tdsFila[0].textContent);
             break;
         case"radioPlan2":
             fila = filas[1];
             tdsFila = fila.getElementsByTagName('td');
-            interes = (tdsFila[0].textContent*tdsFila[1].textContent*tdsFila[2].textContent) / 10000;
+            interes = (tdsFila[0].textContent*tdsFila[1].textContent*tdsFila[2].textContent) / 100;
             montoTotal = interes + parseInt(tdsFila[0].textContent);
             break;
         case"radioPlan3":
             fila = filas[2];
             tdsFila = fila.getElementsByTagName('td');
-            interes = (tdsFila[0].textContent*tdsFila[1].textContent*tdsFila[2].textContent) / 10000;
+            interes = (tdsFila[0].textContent*tdsFila[1].textContent*tdsFila[2].textContent) / 100;
             montoTotal = interes + parseInt(tdsFila[0].textContent);
             break;
     }
