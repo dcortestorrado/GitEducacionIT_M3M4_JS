@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#interes, #montoTotal {
+    height: 40px;
+    width: 300px;
+}
+
+#mensajeMontoTotal, #mensajeInteres {
+    height: 30px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.vhidden {
+   visibility: hidden; 
+}
